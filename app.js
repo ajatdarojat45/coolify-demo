@@ -4,7 +4,8 @@ const cors = require("cors");
 const pgp = require("pg-promise")(/* options */);
 
 const DB_URL =
-	process.env.DB_URL || "postgres://postgres:postgres@localhost:5432/bank";
+	process.env.DB_URL ||
+	"postgresql://cl8dybjjf0002awrr95qo5xiq:IdZfiFZylqyMWyiOWv7XBTfX@203.194.112.44:9000/bank";
 const db = pgp(DB_URL);
 const PORT = process.env.PORT || 3000;
 
